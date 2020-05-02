@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Arial Monospaced MT";
+  src: url("../fonts/ArialMonospacedMT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+form {
+  margin: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+
+  > * {
+    margin-top: 0.5rem;
+  }
+}
+
+button {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+input,
+select {
+  display: block;
+  font-size: 1rem;
+}
+
+.Story {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+  &--proportional {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &--monospace {
+    font-family: "Arial Monospaced MT", sans-serif;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    z-index: 2;
+
+    &--blur {
+      backdrop-filter: blur(1em);
+      -webkit-backdrop-filter: blur(1em);
+    }
+  }
+
+  &__message {
+    padding: 1em;
+  }
+}
+
+.Word {
+  display: inline-block;
+}

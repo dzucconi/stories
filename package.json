@@ -1,0 +1,22 @@
+{
+  "name": "stories",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/dzucconi/stories",
+  "author": "dzucconi",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "frame-interval": "file:.yalc/frame-interval",
+    "queryparams": "^0.1.0"
+  }
+}
