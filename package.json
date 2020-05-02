@@ -11,12 +11,12 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "parcel": "^1.12.4",
-    "sass": "^1.26.5",
-    "typescript": "^3.8.3"
+    "parcel": "1.12.4",
+    "sass": "1.26.5",
+    "typescript": "3.8.3"
   },
   "dependencies": {
-    "frame-interval": "file:.yalc/frame-interval",
-    "queryparams": "^0.1.0"
+    "frame-interval": "1.0.0",
+    "queryparams": "0.1.0"
   }
 }
